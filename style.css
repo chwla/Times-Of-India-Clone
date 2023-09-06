@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 2.8rem;
+}
+
+nav{
+    background-color: rgba(246,246,246,255);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 3rem;
+    margin: auto;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    border-bottom: solid 0.1rem black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav ul a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.nav-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(254,255,254,255);
+    border-bottom: solid 0.1rem #fafbfa;
+}
+
+.nav-two ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-two ul a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-size: 0.6rem;
+    font-weight: 100;
+}
+
+.nav-two-title{
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: red;
+    margin: 0.5rem 0.5rem;
+}
+
+.container-one{
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    margin: auto;
+    margin-left: 10%;
+    flex-wrap: wrap;
+}
+
+.heading-news{
+    width: 600px;
+    height: 300px;
+}
+
+.left-one{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5%;
+}
+
+.left-one-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 0.7rem;
+    gap: 0.5rem;
+}
+
+.left-one-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+}
+
+.left-one-bottom img{
+    width: 130px;
+}
+
+.left-one-bottom p{
+    justify-content: center;
+    align-self: center;
+}
+
+.middle-one{
+    position: absolute;
+    margin: 650px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5%;
+    margin-right: 300px;
+}
+
+.middle-one p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.right-one{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5%;
+    position: absolute;
+    margin-left: 900px;
+}
+
+.box {
+    height: 230px;
+    width: 280px;
+    background-color: rgb(235, 231, 231);
+}
+
+.right-links{
+    margin-top: 5%;
+}
+
+.right-links li{
+    list-style:circle;
+    margin-bottom: 5%;
+}
+
+.right-links li a{
+    text-decoration: none;
+    color: black;
+}
+
+.right-bottom{
+    padding-top: 2rem;
+}
+
+p{
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    width: 100%; 
+    border-color: rgb(0, 0, 0)
+}
+
+.footer {
+    padding-top: 3rem;
+    padding-left: 9rem;
+    width: 80%;
+    text-align: center;
+}
+    
+.row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
+    
+.column {
+        flex-basis: calc(33.33% - 20px);
+        padding: 0 10px;
+        text-align: left;
+}
+    
+.column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+}
+    
+.footer ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+    
+.footer li {
+        margin-bottom: 5px;
+    }
+
+.ftwo{
+    padding-top: 3rem;
+}
+
+.fthree{
+    padding-top: 3rem;
+}
+
+@media (max-width: 1300px) {
+    nav ul {
+      overflow-x: auto;
+      white-space: nowrap; 
+      min-height: 3rem;
+    }
+  
+    nav ul li {
+      display: inline-block;
+    }
+
+    .container-one{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .heading-news{
+        width: 45%;
+    }
+
+    .middle-one{
+        margin-top: 690px;
+        margin-left: 550px;
+    }
+
+    .left-one-bottom{
+        width: 40%;
+    }
+
+    .right-one{
+        position: absolute;
+        margin-left: 780px;
+        margin-top: -120px;
+    }
+
+    .box{
+        width: 120%;
+    }
+
+}
+
+@media  (max-width: 1100px) {
+    
+    .middle-one{
+        margin-left: 520px;
+    }
+
+    .right-one{
+        margin-left: 750px;
+    }
+
+    hr{
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 950px){
+    .right-one{
+        display: none;
+    }
+}
+
+@media  (max-width: 900px) {
+
+    .left-one{
+        width: 120%;
+    }
+
+    nav{
+        width: 100%;
+    }
+}
+
+@media  (max-width: 850px) {
+
+    .middle-one{
+        margin-left: 500px;
+    }
+}
+
+@media (max-width: 800px){
+
+    .middle-one{
+        margin-left: 450px;
+    }
+}
+
+
+
+@media  (max-width: 750px) {
+
+    .middle-one{
+        margin-left: 420px;
+    }
+
+    .left-one-bottom{
+        width: 44%;
+    }
+
+    nav{width: 100%;}
+
+}
+
+@media  (max-width: 700px) {
+
+    .left-one-bottom{
+        width: 46%;
+    }
+
+    .middle-one{
+        margin-left: 390px;
+        margin-top: 655px;
+    }
+
+    .middle-one img{
+        width: 180px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 640px){
+
+    .heading-news{
+        height: auto;
+    }
+
+    .left-one-bottom{
+        width: auto;
+    }
+
+    .middle-one img{
+        width: auto;
+        height: auto;
+    }
+
+    .middle-one{
+        margin-left: 350px;
+        margin-top: 630px;
+    }
+}
+
+@media  (max-width: 600px) {
+    
+    .nav-two{
+        height: 50%;
+    }
+
+    .middle-one img{
+        width: 150px;
+    }
+
+    .middle-one{
+        margin-top: 545px;
+    }
+    
+}
+
+@media (max-width: 570px){
+
+    .middle-one img{
+        width: 150px;
+    }
+
+    .middle-one{
+        margin-top: 555px;
+        margin-left: 320px;
+    }
+    
+}
+
+@media (max-width: 530px){
+    .middle-one{
+        margin-left: 310px;
+        margin-top: 560px;
+    }
+
+    .left-one-bottom{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
